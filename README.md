@@ -3,24 +3,27 @@
 
 LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 函数。
 
-[less官方中文网站](http://lesscss.cn/)
-[less在线编译器](http://tool.oschina.net/less)
-[less编译工具-Koala](http://koala-app.com/)
+[less官方中文网站](http://lesscss.cn/)  
+
+[less在线编译器](http://tool.oschina.net/less)  
+
+[less编译工具-Koala](http://koala-app.com/)  
+
 
 ###less常用语法
 * 变量
  
 * 混合
 
-*带参数混合
+* 带参数混合
 
-*@arguments 变量
+* @arguments 变量
 
-*嵌套规则
+* 嵌套规则
 
-*命名空间
+* 命名空间
 
-*作用域
+* 作用域
 
 
 ```
