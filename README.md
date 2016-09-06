@@ -29,11 +29,11 @@ LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 
 ```
 @charset"utf-8";
 
-* 注释的区别
+ 注释的区别
 /*我是被编译的*/
 //不会被编译的
 
-* //less中的变量, 用@声明
+ //less中的变量, 用@声明
 @test_width: 300px;
 .box{
   width: @test_width;
@@ -42,7 +42,7 @@ LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 
   .border;
 }
 
-* //混合
+ //混合
 .border{
   border: 5px solid pink;
 }
@@ -52,7 +52,7 @@ LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 
   margin-left: 100px;
 }
 
-* //混合-可带参数
+ //混合-可带参数
 .border_02(@border_width){
   border: @border_width solid yellow;
 }
@@ -69,7 +69,7 @@ LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 
   .border_03();
 }
 
-* //混合的例子
+ //混合的例子
 .border_radius(@raidus:5px){
   border-radius: @raidus;
   -webkit-border-radius: @raidus;
@@ -91,7 +91,7 @@ LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 
 //  border-style: dashed dashed solid dashed;
 //}
 
-* //匹配模式
+ //匹配模式
 .triangle(top,@w:5px,@c:#ccc){
   border-width: @w;
   border-color: transparent transparent @c transparent;
@@ -122,7 +122,7 @@ LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 
   .triangle(top,100px);
 }
 
-* //匹配模式-定位例子
+ //匹配模式-定位例子
 .pos(r){
   position: relative;
 }
@@ -146,7 +146,7 @@ LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 
   //color: #cccccc - 10;
 }
 
-* //嵌套
+ //嵌套
 /*
 .list{}
 .list li{}
@@ -186,7 +186,7 @@ LESS 将 CSS 赋予了动态语言的特性，如 变量， 继承， 运算， 
   .border_arg(40px);
 }
 
-* //避免编译 ~''
+ //避免编译 ~''
 .test_03{
   width: ~'calc(300px - 30px)';
 }
